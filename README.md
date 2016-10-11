@@ -2,7 +2,7 @@
 
 An UDF corresponds to a custom JAVA class defined by a user. An UDF can easily be added to a [Warp 10 platform](http://www.warp10.io/).
 
-In this page, we will learn how to implement an UDF and how to deploy a new UDF in your own platform.
+In this page, we will learn how to implement an UDF and how to deploy a new UDF in your own platform. The goal of this "tutorial" udf is to create one single strings from 2 strings that are currently on top of the stack.
 
 ## UDF Interface
 
@@ -15,14 +15,12 @@ First of all, create a new Gradle project in your favorite IDE, and add a new pa
 
 Then create the class HELLOWARP10 that implements WarpScriptRawJavaFunction. 
 
-Inside this build.gradle file notice that it doesn't include in the JAR the WarpScript libraries, but indicated that those library are needed at execution. This is donne when declaring in the build file the following instruction: 
+Inside the build.gradle file notice that it doesn't include in the JAR the WarpScript libraries, but indicated that those library are needed at execution. This is done when declaring in the build.gradle file the following instruction: 
 ```
 provided 'io.warp10:warp10:1.0.1-165-g9c49c1f'
 ```
 
 This operation is important because it means the UDF doesn't need to be recompiled for each new Warp10 version as it use the current version deployed on the Warp10 cluster.
-
-This udf that we will create takes 2 strings parameters on stack and send a result with a merge of both.
 
 ## The Apply function
 

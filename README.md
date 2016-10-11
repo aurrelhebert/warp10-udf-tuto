@@ -37,7 +37,8 @@ Object firstText = stack.pop();
 Object secondText = stack.pop();
 ```
 
-We check if both parameters are valid (if they are String it enougth in this exemple)
+We check if both parameters are valid (if they are String it's enougth for this example)
+
 ```
 if (!(firstText instanceof String)) {
   throw new WarpScriptJavaFunctionException("First param must be a String");
@@ -46,9 +47,13 @@ if (!(firstText instanceof String)) {
 ```
 
 Finally we push back a new element on the stack which is the concatenation of both string.
+
 ```
 stack.push(firstText.toString() + ' ' + secondText.toString());
+...
+return arg0;
 ```
+
 The object returned by the function is arg0 (which contain the stack updated).
 
 ## Deploy it

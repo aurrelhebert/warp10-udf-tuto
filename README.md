@@ -24,8 +24,6 @@ This operation is important because it means the UDF doesn't need to be recompil
 
 This udf that we will create takes 2 strings parameters on stack and send a result with a merge of both.
 
-The full code is available on github [here](https://github.com/aurrelhebert/warp10-udf-tuto).
-
 ## The Apply function
 
 In this function, first we load the current stack from the parameter

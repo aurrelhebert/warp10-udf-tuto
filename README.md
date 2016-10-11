@@ -70,8 +70,6 @@ warpscript.jars.directory = /some/dir/udf
 warpscript.jars.refresh = 60000
 ```
 
-Then just move the generated jar in this folder.
-
 ## Use your UDF
 
 To execute it just run the following WarpScript on your Warp10 backend.

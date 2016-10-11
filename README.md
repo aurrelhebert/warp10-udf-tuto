@@ -24,20 +24,20 @@ This operation is important because it means the UDF doesn't need to be recompil
 
 ## The Apply function
 
-In this function, first we load the current stack from the parameter
+In this function, first we load the current stack from the parameter.
 
 ```
 WarpScriptStack stack =(WarpScriptStack) arg0.get(0);
 ```
 
-Then we store both parameters that were on top of it
+Then we store both parameters that were on top of it.
 
 ```
 Object firstText = stack.pop();
 Object secondText = stack.pop();
 ```
 
-We check if both parameters are valid (if they are String it's enougth for this example)
+We check if both parameters are valid (if they are String it's enougth for this example).
 
 ```
 if (!(firstText instanceof String)) {
@@ -58,7 +58,8 @@ The object returned by the function is arg0 (which contain the stack updated).
 
 ## Deploy it
 
-First compile this project
+First compile this project.
+
 ```
 gradle shadowJar
 ```

@@ -1,10 +1,3 @@
----
-title: Create an UDF
-layout: function
-isPage: true
-category: howto
----
-
 # Create your own User Define Function (UDF)
 
 An UDF corresponds to a custom JAVA class defined by a user. An UDF can easily be added to a Warp 10 platform.
@@ -20,11 +13,9 @@ This class extends  [WarpScriptJavaFunction](https://github.com/cityzendata/warp
 
 First of all, create a new Gradle project in your favorite IDE, and add a new package in src/main/java: io.warp10.tutorial.
 
-Then create the class HELLOWARP10 that implements WarpScriptRawJavaFunction.
+Then create the class HELLOWARP10 that implements WarpScriptRawJavaFunction. 
 
-Use this [file](({{ site.baseurl }}/assets/data/build.gradle)) as compilation one. 
-
-Inside this file notice that it doesn't include in the JAR the WarpScript libraries, but indicated that those library are needed at execution. This is donne when declaring in the build file the following instruction: 
+Inside this build.gradle file notice that it doesn't include in the JAR the WarpScript libraries, but indicated that those library are needed at execution. This is donne when declaring in the build file the following instruction: 
 ```
 provided 'io.warp10:warp10:1.0.1-165-g9c49c1f'
 ```

@@ -20,7 +20,7 @@ Inside the build.gradle file notice that it doesn't include in the JAR the WarpS
 provided 'io.warp10:warp10:1.0.1-165-g9c49c1f'
 ```
 
-This operation is important because it means the UDF doesn't need to be recompiled for each new Warp10 version as it use the current version deployed on the Warp10 cluster.
+This operation is important because it means the UDF doesn't need to be recompiled for each new Warp 10 version as it use the current version deployed on the Warp 10 cluster.
 
 ## The Apply function
 
@@ -73,13 +73,13 @@ warpscript.jars.refresh = 60000
 
 ## Use your UDF
 
-To execute it just run the following WarpScript on your Warp10 backend.
+To execute it just run the following WarpScript on your Warp 10 backend.
 
 ```
     'WARP 10' 'HELLO'
     'io.warp10.tutorial.HELLOWARP10' UDF
 ```
 
-Congrats you managed to create your first UDF for a warp10 cluster !
+Congrats you managed to create your first UDF for a Warp 10 cluster !
 
 
